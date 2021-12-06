@@ -1,5 +1,6 @@
 ```console
 #!/bin/bash
+```
 #Clean environment setup for a new OS X setup
 
 # Homebrew Install
