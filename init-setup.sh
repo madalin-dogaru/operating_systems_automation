@@ -1,3 +1,4 @@
+```bash
 #!/bin/bash
 #Clean environment setup for a new OS X setup
 
@@ -145,4 +146,6 @@ defaults write com.apple.ActivityMonitor IconType -int 5
 
 # show all processes in activity monitor
 defaults write com.apple.ActivityMonitor ShowCategory -int 0
+
+```
 
