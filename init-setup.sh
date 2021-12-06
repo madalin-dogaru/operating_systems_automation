@@ -1,5 +1,6 @@
 #!/bin/bash
 #Clean environment setup for a new OS X setup
+#can be used both as a manual guide and as a script
 
 # Homebrew Install
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
@@ -35,6 +36,7 @@ echo "source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh" >>
 
 # install iTerm2 shell integrations
 curl -L https://iterm2.com/shell_integration/install_shell_integration.sh | bash
+
 
 # vscode
 # ---------------------------------------------------------------------------
