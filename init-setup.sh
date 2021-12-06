@@ -1,4 +1,4 @@
-```bash
+```sh
 #!/bin/bash
 #Clean environment setup for a new OS X setup
 
