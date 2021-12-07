@@ -2,43 +2,48 @@
 #Clean environment setup for a new OS X setup
 #can be used both as a manual guide and as a script
 
-# Homebrew Install
+
+# CORE APPS
+# ---------------------------------------------------------------------------
+# homebrew Install
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 # command line apps
-brew install wget ansible cfssl gnupg helm hugo jq kubectl kubectx kustomize minikube nmap node python3 sops terraform tree wireguard-tools
+brew install wget ansible cfssl gnupg helm hugo jq kubectl kubectx kustomize \
+minikube nmap node python3 sops terraform tree wireguard-tools
 
 # Homebrew taps
 brew tap hashicorp/tap
 brew install hashicorp/tap/packer
 
-# gui applications
-brew install --cask firefox iterm2 signal telegram minikube slack sublime-text the-unarchiver visual-studio-code wireshark
+# gui apps
+brew install --cask firefox iterm2 signal telegram minikube slack sublime-text \
+the-unarchiver visual-studio-code wireshark
 
 # configre git
 git config --global user.name "Madalin Dogaru"
 git config --global user.email "email@address.com"
 
-# iTerm2
+
+# ITERM2 CONFIGURATION
 # ---------------------------------------------------------------------------
 # install zsh powerlevel10k
 # install the powerlevel10k optional fonts 
-# https://github.com/romkatv/powerlevel10k#manual-font-installation
+# https://github.com/romkatv/powerlevel10k#manual-font-installation (manual install)
 brew install romkatv/powerlevel10k/powerlevel10k
 echo "source $(brew --prefix)/opt/powerlevel10k/powerlevel10k.zsh-theme" >>~/.zshrc
 p10k configure
 
 # install & activate zsh syntax highlighting and autosuggestions
-brew install zsh-syntax-highlighting
+brew install zsh-syntax-highlighting zsh-autosuggestions
 echo "source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh">>~/.zshrc
-brew install zsh-autosuggestions
 echo "source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh" >>~/.zshrc
 
 # install iTerm2 shell integrations
 curl -L https://iterm2.com/shell_integration/install_shell_integration.sh | bash
 
 
-# vscode
+# VSCODE
 # ---------------------------------------------------------------------------
 # extensions
 code --install-extension eamodio.gitlens
@@ -47,7 +52,7 @@ code --install-extension ms-kubernetes-tools.vscode-kubernetes-tools
 code --install-extension ms-vscode-remote.remote-ssh
 
 
-# OS X Config
+# OSX LOGIC CONFIGURATION
 # ---------------------------------------------------------------------------
 # expand save panel by default
 defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
@@ -76,9 +81,8 @@ defaults write NSGlobalDomain NSDisableAutomaticTermination -bool false
 defaults write com.apple.SoftwareUpdate ScheduleFrequency -int 1
 
 
-# finder
-# ---------------------------------------------------------------------------
-
+# finder configuration
+# ---------------------
 # show hidden files by default
 defaults write com.apple.Finder AppleShowAllFiles -bool false
 
@@ -130,15 +134,11 @@ defaults write com.apple.finder FXInfoPanesExpanded -dict \
 	OpenWith -bool true \
 	Privileges -bool true
 
-
-# dock, dashboard, hot corners
-# ---------------------------------------------------------------------------
 # speed up mission control animations
 defaults write com.apple.dock expose-animation-duration -float 0.1
 
-
 # activity monitor
-# ---------------------------------------------------------------------------
+# ---------------------
 # show the main window when launching activity monitor
 defaults write com.apple.ActivityMonitor OpenMainWindow -bool true
 
@@ -147,5 +147,3 @@ defaults write com.apple.ActivityMonitor IconType -int 5
 
 # show all processes in activity monitor
 defaults write com.apple.ActivityMonitor ShowCategory -int 0
-
-
