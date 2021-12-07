@@ -1,2 +1,2 @@
 # osx-init-config
-OSX environment setup on a new Macbook or reinstall
+OSX fresh environment setup. Includes applications install and operating system configuration. 
