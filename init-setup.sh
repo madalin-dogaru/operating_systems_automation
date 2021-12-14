@@ -1,6 +1,6 @@
 #!/bin/bash
-#Clean environment setup for a new OS X setup
-#can be used both as a manual guide and as a script
+# Clean environment setup for a new OS X setup
+# Can be used both as a manual guide and as a script
 
 
 # CORE APPS
