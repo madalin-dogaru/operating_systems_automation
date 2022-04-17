@@ -10,7 +10,10 @@
 
 # command line apps
 brew install wget ansible cfssl gnupg helm hugo jq kubectl kubectx kustomize \
-minikube nmap node python3 sops terraform tree wireguard-tools net-snmp
+minikube nmap node python3 sops terraform tree wireguard-tools net-snmp bat
+
+# red-team apps
+brew install john-jumbo
 
 # Homebrew taps
 brew tap hashicorp/tap
