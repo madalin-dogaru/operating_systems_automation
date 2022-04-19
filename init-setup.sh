@@ -9,8 +9,9 @@
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 # command line apps
-brew install wget ansible cfssl gnupg helm hugo jq kubectl kubectx kustomize \
-minikube nmap node python3 sops terraform tree wireguard-tools net-snmp bat
+brew install --cask wget ansible cfssl gnupg helm hugo jq kubectl kubectx kustomize \
+minikube nmap node python3 sops terraform tree wireguard-tools net-snmp bat \
+android-platform-tools
 
 # red-team apps
 brew install john-jumbo
