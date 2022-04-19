@@ -1,7 +1,8 @@
 #!/bin/bash
 # Clean environment setup for a new OS X setup
 # Can be used both as a manual guide and as a script
-
+# packages with workarounds required: 
+# wfuzz - https://wfuzz.readthedocs.io/en/latest/user/installation.html#pycurl-on-macos
 
 # CORE APPS
 # ---------------------------------------------------------------------------
@@ -11,7 +12,7 @@
 # command line apps
 brew install --cask wget ansible cfssl gnupg helm hugo jq kubectl kubectx kustomize \
 minikube nmap node python3 sops terraform tree wireguard-tools net-snmp bat \
-android-platform-tools
+android-platform-tools wfuzz
 
 # red-team apps
 brew install john-jumbo
