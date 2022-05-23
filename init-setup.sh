@@ -13,6 +13,7 @@
 brew install --cask wget ansible cfssl gnupg helm hugo jq kubectl kubectx kustomize \
 minikube nmap node python3 sops terraform tree wireguard-tools net-snmp bat \
 android-platform-tools wfuzz
+brew install Caskroom/cask/wkhtmltopdf
 
 # red-team apps
 brew install john-jumbo apktool
@@ -20,6 +21,7 @@ brew install john-jumbo apktool
 # Homebrew taps
 brew tap hashicorp/tap
 brew install hashicorp/tap/packer
+
 
 # gui apps
 brew install --cask firefox iterm2 signal telegram minikube slack sublime-text \
