@@ -12,7 +12,7 @@
 # command line apps
 brew install --cask wget ansible cfssl gnupg helm hugo jq kubectl kubectx kustomize \
 minikube nmap node python3 sops terraform tree wireguard-tools net-snmp bat \
-android-platform-tools wfuzz
+android-platform-tools wfuzz cmake
 brew install Caskroom/cask/wkhtmltopdf
 
 # red-team apps
