@@ -15,7 +15,7 @@ minikube nmap node python3 sops terraform tree wireguard-tools net-snmp bat \
 android-platform-tools wfuzz
 
 # red-team apps
-brew install john-jumbo
+brew install john-jumbo apktool
 
 # Homebrew taps
 brew tap hashicorp/tap
