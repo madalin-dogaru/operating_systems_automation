@@ -31,6 +31,9 @@ the-unarchiver visual-studio-code wireshark
 git config --global user.name "Madalin Dogaru"
 git config --global user.email "email@address.com"
 
+#python pip apps
+pip3 install flask-unsign
+
 
 # ITERM2 CONFIGURATION
 # ---------------------------------------------------------------------------
