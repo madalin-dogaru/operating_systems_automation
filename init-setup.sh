@@ -16,7 +16,7 @@ android-platform-tools wfuzz cmake
 brew install Caskroom/cask/wkhtmltopdf
 
 # red-team apps
-brew install john-jumbo apktool
+brew install john-jumbo apktool tnftp
 
 # Homebrew taps
 brew tap hashicorp/tap
