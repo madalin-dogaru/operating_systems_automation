@@ -1,0 +1,85 @@
+[global_config]
+  title_transmit_bg_color = "#000000"
+  title_receive_bg_color = "#729fcf"
+  inactive_color_offset = 0.5833333333333334
+  suppress_multiple_term_dialog = True
+[keybindings]
+  next_tab = <Primary>Right
+  prev_tab = <Primary>Left
+  hide_window = grave
+[profiles]
+  [[default]]
+    background_color = "#1c1b1b"
+    background_darkness = 0.98
+    background_type = transparent
+    cursor_shape = underline
+    cursor_color = "#aaaaaa"
+    font = Monospace 10
+    foreground_color = "#ffffff"
+    show_titlebar = False
+    scrollbar_position = hidden
+    scrollback_infinite = True
+    use_system_font = False
+[layouts]
+  [[default]]
+    [[[child0]]]
+      type = Window
+      parent = ""
+      order = 0
+      position = 0:31
+      maximised = True
+      fullscreen = False
+      size = 1920, 1141
+      title = root@kali: ~/offence/WPSeku
+      last_active_term = b8f9f631-d3ac-40ad-889e-907a7c6bda83
+      last_active_window = True
+    [[[child1]]]
+      type = VPaned
+      parent = child0
+      order = 0
+      position = 181
+      ratio = 0.15933098591549297
+    [[[child2]]]
+      type = HPaned
+      parent = child1
+      order = 0
+      position = 961
+      ratio = 0.5018276762402089
+    [[[terminal3]]]
+      type = Terminal
+      parent = child2
+      order = 0
+      profile = default
+      uuid = bf0cd33c-8992-4185-8a0f-9a1a3fef1ddc
+    [[[terminal4]]]
+      type = Terminal
+      parent = child2
+      order = 1
+      profile = default
+      uuid = 4ac84cc3-83fd-4350-8985-b1f5c6a25839
+    [[[child5]]]
+      type = HPaned
+      parent = child1
+      order = 1
+      position = 1353
+      ratio = 0.7065274151436032
+    [[[terminal6]]]
+      type = Terminal
+      parent = child5
+      order = 0
+      profile = default
+      uuid = b8f9f631-d3ac-40ad-889e-907a7c6bda83
+    [[[terminal7]]]
+      type = Terminal
+      parent = child5
+      order = 1
+      profile = default
+      uuid = 0a63366a-053f-4143-a484-df0017963b51
+  [[exdefault]]
+    [[[window0]]]
+      type = Window
+      parent = ""
+    [[[child1]]]
+      type = Terminal
+      parent = window0
+[plugins]
