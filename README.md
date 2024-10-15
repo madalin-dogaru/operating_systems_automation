@@ -5,4 +5,3 @@ I will add here automations that I create during offensive/defensive scenarios. 
 #### Contains:   
 - Clean OS configuration setups.
 - Various automations & configurations of tools.
-- Any automation I might remember to add here :)
